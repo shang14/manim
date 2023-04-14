@@ -1,1 +1,2 @@
-# manim
+# Teach My Kid 
+Maths with Manim...
