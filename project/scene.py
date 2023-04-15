@@ -21,6 +21,3 @@ class SquareToCircle(Scene):
         self.play(FadeOut(square))
         
         
-        
-        
-    
