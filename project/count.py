@@ -11,3 +11,15 @@ class Count(Animation):
         value = self.start + (alpha * (self.end - self.start))
         self.mobject.set_value(value)
         
+class CountingScene(Scene):
+    def construct(self):
+        number = DecimalNumber().set_color(WHITE).scale(5)
+        number.add_updater(lambda number: number.move_to(ORIGIN))
+        
+        self.add(number)
+        
+        self.wait()
+        
+        self.play(Count(number, 0, 100), run_time=4,  rate_func=linear)
+        
+        self.wait()
