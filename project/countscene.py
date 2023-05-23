@@ -4,7 +4,7 @@ class Count(Animation):
     def __init__(self, number: DecimalNumber, start: float, end: float, **kwargs) -> None:
         # Pass number as the mobject of the animation
         super().__init__(number,  **kwargs)
-        # Set start and end
+        
         self.start = start
         self.end = end
 
