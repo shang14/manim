@@ -1,6 +1,6 @@
 from manim import *
 
-class latex(Scene):
+class grouper(Scene):
     
     
     def construct(self):
@@ -9,7 +9,7 @@ class latex(Scene):
             "opacity": 0.7,
         }
         
-        title = Text("Text, Latex", **text_parameters)
+        title = Text("Grouping MObject", **text_parameters)
        
         self.play(FadeIn(title)) 
         self.wait(3)
