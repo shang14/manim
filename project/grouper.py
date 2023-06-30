@@ -31,7 +31,7 @@ class grouper(Scene):
         
         bigM = Group(obj1, obj2, obj3).arrange(RIGHT)
         self.play(FadeIn(bigM))
-        self.wait()
+        self.wait(3)
         
         
     
