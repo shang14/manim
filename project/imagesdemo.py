@@ -9,6 +9,7 @@ class imagesdemo(Scene):
         
         blueOrange = ImageMobject("./images.jpeg")
         self.play(FadeIn(blueOrange))
+        self.play(FadeOut(blueOrange))
         
         umbrella = SVGMobject("./svgs.svg")
         self.play(FadeIn(umbrella))
